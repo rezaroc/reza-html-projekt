@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto ECU Tuning</title>
+    <link rel="stylesheet" href="website.css">
+    <script src="website.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welkom bij Auto ECU Tuning</h1>
+        <p>Verbeter eenvoudig de prestaties of zuinigheid van je auto!</p>
+    </header>
+
+    <nav>
+        <a onclick="showTab('home')">Home</a>
+        <a onclick="showTab('modellen')">Modellen</a>
+        <a onclick="showTab('tunes')">Informatie over Tunes</a>
+        <a onclick="showTab('contact')">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div id="home" class="tab active">
+            <h2>Welkom bij onze homepage!</h2>
+            <p>Onze website biedt een eenvoudige en snelle manier om tuning-bestanden voor jouw auto te downloaden en direct thuis te gebruiken. Geen lange wachttijden meer!</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="Placeholder Image">
+        </div>
+
+        <div id="modellen" class="tab">
+            <h2>Modellen per Merk</h2>
+            <div class="car-images">
+                <h3>BMW</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="BMW 3 Serie" onclick="showTuningOptions('BMW 3 Serie')">
+                <p>BMW 3 Serie</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="BMW 5 Serie" onclick="showTuningOptions('BMW 5 Serie')">
+                <p>BMW 5 Serie</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="BMW X5" onclick="showTuningOptions('BMW X5')">
+                <p>BMW X5</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="BMW M4" onclick="showTuningOptions('BMW M4')">
+                <p>BMW M4</p>
+
+                <h3>Audi</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="Audi A3" onclick="showTuningOptions('Audi A3')">
+                <p>Audi A3</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="Audi A4" onclick="showTuningOptions('Audi A4')">
+                <p>Audi A4</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="Audi Q5" onclick="showTuningOptions('Audi Q5')">
+                <p>Audi Q5</p>
+
+                <h3>Volkswagen</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="Volkswagen Golf" onclick="showTuningOptions('Volkswagen Golf')">
+                <p>Volkswagen Golf</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="Volkswagen Passat" onclick="showTuningOptions('Volkswagen Passat')">
+                <p>Volkswagen Passat</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="Volkswagen Tiguan" onclick="showTuningOptions('Volkswagen Tiguan')">
+                <p>Volkswagen Tiguan</p>
+
+                <h3>Mercedes</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="Mercedes A-Klasse" onclick="showTuningOptions('Mercedes A-Klasse')">
+                <p>Mercedes A-Klasse</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="Mercedes C-Klasse" onclick="showTuningOptions('Mercedes C-Klasse')">
+                <p>Mercedes C-Klasse</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="Mercedes E-Klasse" onclick="showTuningOptions('Mercedes E-Klasse')">
+                <p>Mercedes E-Klasse</p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="Mercedes GLE" onclick="showTuningOptions('Mercedes GLE')">
+                <p>Mercedes GLE</p>
+            </div>
+            <div id="tuning-options" class="tuning-options"></div>
+        </div>
+
+        <div id="tunes" class="tab">
+            <h2>Hoe kunnen Tunes je helpen?</h2>
+            <p>Met tuning kun je verschillende voordelen behalen voor jouw auto, zoals:</p>
+            <ul>
+                <li><strong>Prestatietuning:</strong> Verhoogt de kracht en snelheid van je voertuig.</li>
+                <li><strong>Efficiëntietuning:</strong> Biedt betere brandstofefficiëntie en milieuprestaties.</li>
+                <li><strong>Veiligheidstuning:</strong> Verhoogt de veiligheid door verbeterde remprestaties en rijassistentiesystemen.</li>
+                <li><strong>Kostenbesparing:</strong> Bespaar op lange termijn door verbeterde efficiëntie en performance.</li>
+            </ul>
+        </div>
+
+        <div id="contact" class="tab">
+            <h2>Contact</h2>
+            <p>Heb je vragen of opmerkingen? Neem gerust contact met ons op via het onderstaande formulier.</p>
+            <form>
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam" required><br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="bericht">Bericht:</label>
+                <textarea id="bericht" name="bericht" required></textarea><br><br>
+
+                <input type="submit" value="Verzenden">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Auto ECU Tuning. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>
